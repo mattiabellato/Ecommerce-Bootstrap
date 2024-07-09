@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce di Sneakers</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">SneakerStore</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contatti.html">Contatti</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="card-deck">
+        <!-- Card 1 -->
+        <div class="card" id="card-1">
+          <img src="images/sneaker1.jpg" class="card-img-top" alt="Sneaker 1" />
+          <div class="card-body">
+            <h5 class="card-title">Sneaker 1</h5>
+            <p class="card-text">Descrizione della Sneaker 1.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €120</p>
+            <p class="card-text"><strong>Quantità:</strong> 10 disponibili</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary add-to-cart" id="add-to-cart-1"
+              >Aggiungi al carrello</a
+            >
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" id="card-2">
+          <img src="images/sneaker2.jpg" class="card-img-top" alt="Sneaker 2" />
+          <div class="card-body">
+            <h5 class="card-title">Sneaker 2</h5>
+            <p class="card-text">Descrizione della Sneaker 2.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €140</p>
+            <p class="card-text"><strong>Quantità:</strong> 8 disponibili</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="#"
+              class="btn btn-primary add-to-cart"
+              id="add-to-cart-1"
+              data-toggle="modal"
+              data-target="#cartModal"
+              >Aggiungi al carrello</a
+            >
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" id="card-3">
+          <img src="images/sneaker3.jpg" class="card-img-top" alt="Sneaker 3" />
+          <div class="card-body">
+            <h5 class="card-title">Sneaker 3</h5>
+            <p class="card-text">Descrizione della Sneaker 3.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €110</p>
+            <p class="card-text"><strong>Quantità:</strong> 5 disponibili</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="#"
+              class="btn btn-primary add-to-cart"
+              id="add-to-cart-1"
+              data-toggle="modal"
+              data-target="#cartModal"
+              >Aggiungi al carrello</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck mt-4">
+        <!-- Card 4 -->
+        <div class="card" id="card-4">
+          <img src="images/sneaker3.jpg" class="card-img-top" alt="Sneaker 4" />
+          <div class="card-body">
+            <h5 class="card-title">Sneaker 4</h5>
+            <p class="card-text">Descrizione della Sneaker 4.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €130</p>
+            <p class="card-text"><strong>Quantità:</strong> 12 disponibili</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="#"
+              class="btn btn-primary add-to-cart"
+              id="add-to-cart-1"
+              data-toggle="modal"
+              data-target="#cartModal"
+              >Aggiungi al carrello</a
+            >
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card" id="card-5">
+          <img src="images/sneaker2.jpg" class="card-img-top" alt="Sneaker 5" />
+          <div class="card-body">
+            <h5 class="card-title">Sneaker 5</h5>
+            <p class="card-text">Descrizione della Sneaker 5.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €150</p>
+            <p class="card-text"><strong>Quantità:</strong> 7 disponibili</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="#"
+              class="btn btn-primary add-to-cart"
+              id="add-to-cart-1"
+              data-toggle="modal"
+              data-target="#cartModal"
+              >Aggiungi al carrello</a
+            >
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card" id="card-6">
+          <img src="images/sneaker1.jpg" class="card-img-top" alt="Sneaker 6" />
+          <div class="card-body">
+            <h5 class="card-title">Sneaker 6</h5>
+            <p class="card-text">Descrizione della Sneaker 6.</p>
+            <p class="card-text"><strong>Prezzo:</strong> €125</p>
+            <p class="card-text"><strong>Quantità:</strong> 9 disponibili</p>
+          </div>
+          <div class="card-footer">
+            <a
+              href="#"
+              class="btn btn-primary add-to-cart"
+              id="add-to-cart-1"
+              data-toggle="modal"
+              data-target="#cartModal"
+              >Aggiungi al carrello</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal per l'avviso di aggiunta al carrello -->
+    <div
+      class="modal fade"
+      id="cartModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="cartModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">
+              Ordine aggiunto al carrello
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Il prodotto è stato aggiunto al tuo carrello con successo.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Chiudi
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Nascondi il modale quando viene nascosto
+      $("#cartModal").on("hidden.bs.modal", function () {
+        // Ripristina il focus sul bottone "Aggiungi al carrello" per la prossima interazione
+        $(".add-to-cart:focus").blur();
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
